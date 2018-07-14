@@ -17,5 +17,6 @@ class SessionsController < ApplicationController
   end
 
   def show
+    @session = session[:name]
   end
 end
