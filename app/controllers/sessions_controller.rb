@@ -12,6 +12,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    session[:name] = nil
+    redirect_to root_path
   end
 
   def show
